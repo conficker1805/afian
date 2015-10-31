@@ -59,6 +59,10 @@
     height: 560px;
     border-bottom: 1px solid #e0e0e0;
 
+    .wraper {
+      margin-top: 132px;
+    }
+
     .img-wrap img {
       max-width: 625px;
     }
@@ -66,6 +70,30 @@
     article {
       line-height: 21px;
       margin-top: 30px;
+    }
+  }
+
+  section.services {
+    height: 420px;
+    text-align: center;
+
+    .wraper {
+      margin-top: 94px;
+    }
+
+    .img-wrap {
+      min-height: 96px;
+    }
+
+    .title {
+      margin-top: 32px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .description {
+      margin-top: 12px;
+      line-height: 21px;
     }
   }
 }
