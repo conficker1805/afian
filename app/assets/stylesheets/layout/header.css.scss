@@ -1,0 +1,23 @@
+.header-container {
+  height: 80px;
+
+  .branch {
+
+  }
+
+  nav {
+    margin-top: 30px;
+    text-transform: uppercase;
+    text-align: right;
+
+    li {
+      margin-left: 50px;
+      display: inline;
+
+      a {
+        font: 16px $support-font;
+        color: $main-color;
+      }
+    }
+  }
+}
