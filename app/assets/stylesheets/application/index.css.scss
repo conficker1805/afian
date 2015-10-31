@@ -208,4 +208,26 @@
       }
     }
   }
+
+  section.contact {
+    height: 240px;
+    background-color: #37474f;
+
+    .wraper {
+      margin-top: 60px;
+    }
+
+    p.title {
+      color: #FFF;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .btn.red {
+      height: 60px;
+      margin: 36px auto;
+      max-width: 270px;
+      font-size: 24px;
+    }
+  }
 }

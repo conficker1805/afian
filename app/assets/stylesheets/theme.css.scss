@@ -15,5 +15,11 @@ body {
   color: #FFF;
 }
 
+.btn.red {
+  @include border-radius(0);
+  color: #FFF;
+  background-color: $main-red;
+}
+
 
 
