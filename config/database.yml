@@ -1,0 +1,13 @@
+development:
+ adapter: postgresql
+ database: afian_development
+ host: localhost
+
+test:
+ adapter: postgresql
+ database: afian_test
+ host: localhost
+
+production:
+ adapter: postgresql
+ database: afian_production

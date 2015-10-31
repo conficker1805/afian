@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    = render 'layouts/declare'
+
+  body
+  	.page-wrap
+  		header
+  			= render 'layouts/header'
+
+  		main
+  			.container
+    			= yield
+
+    	footer
+        = render 'layouts/footer'
+
+	= render 'layouts/flash_message'
+
+
