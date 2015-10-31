@@ -1,8 +1,10 @@
 .header-container {
   height: 80px;
+  position: relative;
+  @include box-shadow(0px 1px 1px #727272);
 
-  .branch {
-
+  .branch-wrap {
+    margin-top: 2px;
   }
 
   nav {

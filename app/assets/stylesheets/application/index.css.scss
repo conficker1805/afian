@@ -1,0 +1,41 @@
+.application-index-container {
+  section.banner {
+    height: 470px;
+    background: image-url('core/banner-bg.png') no-repeat;
+    background-size: cover;
+
+    .intro {
+      margin-top: 68px;
+      font-size: 36px;
+      font-weight: bold;
+      color: #FFF;
+
+      p {
+        letter-spacing: 2.5px;
+        margin-top: 20px;
+        white-space: nowrap;
+      }
+
+      .btn.white {
+        height: 60px;
+        max-width: 368px;
+        margin-top: 65px;
+        font-size: 24px;
+        position: relative;
+
+        &:after {
+          top: 90px;
+          left: 50%;
+          content: "\f175";
+          font-family: "FontAwesome";
+          display: inline-block;
+          position: absolute;
+        }
+      }
+    }
+
+    .img-wrap {
+      margin-top: 25px;
+    }
+  }
+}

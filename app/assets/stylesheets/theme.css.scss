@@ -2,3 +2,18 @@ body {
   font: 14px $main-font;
   color: $main-color;
 }
+
+.btn {
+  @include display-flex();
+  @include align-items(center);
+  @include justify-content(center);
+}
+
+.btn.white {
+  border: 2px solid #FFF;
+  @include border-radius(0);
+  color: #FFF;
+}
+
+
+
