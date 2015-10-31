@@ -1,4 +1,19 @@
 .application-index-container {
+  section h1.title {
+    font-size: 24px;
+    font-weight: bold;
+
+    &:after {
+      content: "";
+      width: 82px;
+      height: 4px;
+      top: 4px;
+      position: relative;
+      display: block;
+      background-color: $main-red;
+    }
+  }
+
   section.banner {
     height: 470px;
     background: image-url('core/banner-bg.png') no-repeat;
@@ -36,6 +51,21 @@
 
     .img-wrap {
       margin-top: 25px;
+    }
+  }
+
+  section.afian-lab {
+    background-color: #fafafa;
+    height: 560px;
+    border-bottom: 1px solid #e0e0e0;
+
+    .img-wrap img {
+      max-width: 625px;
+    }
+
+    article {
+      line-height: 21px;
+      margin-top: 30px;
     }
   }
 }
