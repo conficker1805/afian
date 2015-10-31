@@ -112,4 +112,22 @@
 
     background-color: #fafafa;
   }
+
+  section.route {
+    height: 470px;
+    color: #FFF;
+    background-color: #ef5555;
+
+    .wraper {
+      margin-top: 50px;
+    }
+
+    .intro {
+      margin-top: 52px;
+
+      h1.title:after {
+        background-color: #FFF;
+      }
+    }
+  }
 }
