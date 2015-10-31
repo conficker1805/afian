@@ -1,17 +1,26 @@
 .application-index-container {
-  section h1.title {
-    font-size: 24px;
-    font-weight: bold;
+  section  {
+    border-bottom: 1px solid #e0e0e0;
 
-    &:after {
-      content: "";
-      width: 82px;
-      height: 4px;
-      top: 4px;
-      position: relative;
-      display: block;
-      background-color: $main-red;
+    h1.title {
+      font-size: 24px;
+      font-weight: bold;
+
+      &:after {
+        content: "";
+        width: 82px;
+        height: 4px;
+        top: 4px;
+        position: relative;
+        display: block;
+        background-color: $main-red;
+      }
     }
+  }
+
+  article {
+    line-height: 21px;
+    margin-top: 30px;
   }
 
   section.banner {
@@ -57,7 +66,6 @@
   section.afian-lab {
     background-color: #fafafa;
     height: 560px;
-    border-bottom: 1px solid #e0e0e0;
 
     .wraper {
       margin-top: 132px;
@@ -67,10 +75,6 @@
       max-width: 625px;
     }
 
-    article {
-      line-height: 21px;
-      margin-top: 30px;
-    }
   }
 
   section.services {
@@ -95,5 +99,17 @@
       margin-top: 12px;
       line-height: 21px;
     }
+  }
+
+  section.deliver {
+    .wraper {
+      margin-top: 75px;
+    }
+
+    .img-wrap img {
+      width: 100%;
+    }
+
+    background-color: #fafafa;
   }
 }
