@@ -8,7 +8,7 @@
 
       &:after {
         content: "";
-        width: 82px;
+        width: 50px;
         height: 4px;
         top: 4px;
         position: relative;
@@ -66,6 +66,10 @@
   section.afian-lab {
     background-color: #fafafa;
     height: 560px;
+
+      h1.title:after {
+        width: 82px;
+      }
 
     .wraper {
       margin-top: 132px;
@@ -128,6 +132,43 @@
       h1.title:after {
         background-color: #FFF;
       }
+    }
+  }
+
+  section.bus-viz {
+    height: 466px;
+
+    .wraper {
+      margin-top: 46px;
+    }
+
+    .img-wrap img {
+      max-width: 627px;
+    }
+
+    .intro {
+      margin-top: 52px;
+    }
+  }
+
+  section.taxi-viz {
+    height: 468px;
+    background-color: #fafafa;
+
+    h1.title:after {
+      background-color: #FFF;
+    }
+
+    .wraper {
+      margin-top: 48px;
+    }
+
+    .img-wrap img {
+      margin-left: 15px;
+    }
+
+    .intro {
+      margin-top: 52px;
     }
   }
 }
