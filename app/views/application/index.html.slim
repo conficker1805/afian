@@ -108,5 +108,22 @@
   section.contact
     .container
       .row.wraper
-        p.title IF YOU LIKE WHAT WE DO AND THINK WE COULD WORK TOGETHER, THEN GET IN TOUCH
-        = link_to "Get a free quote", root_path, class: 'btn red'
+        .col-md-6.quote
+          p.title IF YOU LIKE WHAT WE DO AND
+          p.title THINK WE COULD WORK TOGETHER, THEN GET IN TOUCH
+          = link_to "Get a free quote", root_path, class: 'btn red'
+        .col-md-6.contact-info
+          p.title OR CONTACT US DIRECTLY
+          .row
+            .col-md-10.col-md-offset-2
+              p.site
+                = fa_icon 'globe'
+                | www.afi.io
+              p.phone
+                = fa_icon 'phone'
+                | 62413013
+              p.address
+                = fa_icon 'map-marker'
+                | 237 Kearny Street, San Francisco, CA 94108
+
+
