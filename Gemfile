@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 # Use sqlite3 as the database for Active Record
@@ -70,7 +69,7 @@ group :development, :test do
   # Rails error page with a much better error
   gem 'better_errors'
 
-  # Pretty print your Ruby objects  
+  # Pretty print your Ruby objects
   gem 'awesome_print'
 end
 
