@@ -19,7 +19,25 @@ body {
   @include border-radius(0);
   color: #FFF;
   background-color: $main-red;
+
+  &.icon .fa {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
 
+.form-control {
+  box-shadow: none;
+  border-radius: 2px;
+  border: 1px solid #e0e0e0;
 
+  &.string {
+    height: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
 
