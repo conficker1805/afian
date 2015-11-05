@@ -2,9 +2,9 @@
   .container
     .row
       .branch-wrap.col-md-5
-        = image_tag('core/branch.png', alt: "Afian's logo")
+        = image_tag_with_at2x('core/branch.png')
       nav.col-md-7
         li = link_to "About us", root_path
         li = link_to "Service", root_path
         li = link_to "Works", root_path
-        li = link_to "Contact us", root_path
+        li = link_to "Contact us", new_contact_path

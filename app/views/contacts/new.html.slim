@@ -1,0 +1,40 @@
+.contact-new-container
+  section.banner
+    .container
+      .row.wraper
+        .intro.col-md-8.col-md-offset-2
+          .title Have a problem we can solve?
+          .title We are here to help.
+        .contact-info.col-md-6.col-md-offset-3
+          .icon-wrap
+            = fa_icon "phone"
+            p 62413013
+          .icon-wrap
+            = fa_icon "envelope"
+            p sales@afi.io
+          .icon-wrap
+            = fa_icon "map-marker"
+            p
+              | 237 Kearny Street
+              br
+              | San Francisco
+              br
+              | CA 94108
+  section.contact-form
+    .container
+      .row.wraper
+        .intro.col-md-6.col-md-offset-3
+          = simple_form_for @contact do |f|
+            .form-title DROP US A LINE ... OR TWO
+            .row
+              .col-md-6
+                = f.input :name, input_html: { placeholder: 'YOUR NAME' }, label: false
+                = f.input :email, input_html: { placeholder: 'EMAIL ADDRESS' }, label: false
+              .col-md-6
+                = f.input :company, input_html: { placeholder: 'YOUR COMPANY' }, label: false
+                = f.input :phone, input_html: { placeholder: 'PHONE NUMBER' }, label: false
+            = f.input :message, input_html: { placeholder: 'MESSAGES' }, label: false
+            = link_to 'javascript:', class: 'btn red icon submit-now'
+              | SUBMIT
+              = fa_icon 'send-o'
+
