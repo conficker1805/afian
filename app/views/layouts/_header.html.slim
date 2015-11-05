@@ -2,7 +2,8 @@
   .container
     .row
       .branch-wrap.col-md-5
-        = image_tag_with_at2x('core/branch.png')
+        = link_to root_path
+          = image_tag_with_at2x('core/branch.png')
       nav.col-md-7
         li = link_to "About us", root_path
         li = link_to "Service", root_path
