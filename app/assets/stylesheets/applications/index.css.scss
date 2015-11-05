@@ -30,7 +30,7 @@
 
   section.banner {
     height: 470px;
-    background: image-url('core/banner-bg.png') no-repeat;
+    background: image-url('core/banner-bg.jpeg') no-repeat;
     background-size: cover;
 
     .intro {
@@ -77,11 +77,15 @@
       }
 
     .wraper {
-      margin-top: 132px;
+      margin-top: 82px;
     }
 
     .img-wrap img {
-      max-width: 625px;
+      max-width: 400px;
+    }
+
+    .intro {
+      margin-top: 68px;
     }
   }
 
@@ -126,6 +130,10 @@
     color: #FFF;
     background-color: #ef5555;
 
+    img {
+      max-width: 665px;
+    }
+
     .wraper {
       margin-top: 50px;
     }
@@ -165,6 +173,7 @@
 
     .img-wrap img {
       margin-left: 15px;
+      max-width: 555px;
     }
 
     .intro {

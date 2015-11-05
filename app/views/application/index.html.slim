@@ -12,9 +12,9 @@
   section.afian-lab
     .container
       .row.wraper
-        .col-md-7.img-wrap
+        .col-md-5.img-wrap
           = image_tag_with_at2x('lab.png')
-        .intro.col-md-5
+        .intro.col-md-7
           h1.title About Afi Labs
           article
             p Afi Labs provides a simple and intuitive way to understand and manage their data. We build the API (Application Programming Interface) layer that connects your data with our advanced algorithms and visually stunning visualization platforms to allow your team to turn large amounts of data into actionable information.
@@ -126,5 +126,28 @@
                 = fa_icon 'map-marker'
                 | 237 Kearny Street, San Francisco, CA 94108
 
-  = javascript_include_tag 'http://imulus.github.io/retinajs/assets/retina.js'
+javascript:
+  $(document).ready(function(){
+    function isHighDensity(){
+        return ((window.matchMedia && (window.matchMedia('only screen and (min-resolution: 124dpi), only screen and (min-resolution: 1.3dppx), only screen and (min-resolution: 48.8dpcm)').matches || window.matchMedia('only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6/2), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3)').matches)) || (window.devicePixelRatio && window.devicePixelRatio > 1.3));
+    }
+
+    function isRetina(){
+        return ((window.matchMedia && (window.matchMedia('only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 75.6dpcm)').matches || window.matchMedia('only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)').matches)) || (window.devicePixelRatio && window.devicePixelRatio >= 2)) && /(iPad|iPhone|iPod)/g.test(navigator.userAgent);
+    }
+
+    function isRetinaDisplay() {
+        if (window.matchMedia) {
+            var mq = window.matchMedia("only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6/2), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen  and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx)");
+            return (mq && mq.matches || (window.devicePixelRatio > 1));
+        }
+    }
+
+    if (isRetinaDisplay()) {
+      $('img[data-at2x]').each(function(index, value) {
+        $(this).attr('src', $(this).attr('data-at2x'))
+      });
+    }
+  })
+
 
