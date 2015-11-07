@@ -39,7 +39,11 @@ javascript:
         }
     }
 
-    if (!isRetinaDisplay()) {
+    console.log(isHighDensity())
+    console.log(isRetina())
+    console.log(isRetinaDisplay())
+
+    if (isRetinaDisplay()) {
       $('img[data-at2x]').each(function(index, value) {
         $(this).attr('src', $(this).attr('data-at2x'))
       });
