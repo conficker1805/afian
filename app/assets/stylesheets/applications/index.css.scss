@@ -208,6 +208,8 @@
       @include display-flex();
 
       img {
+        max-width: 330px;
+        max-height: 165px;
         margin: 0 auto;
         @include display-flex();
         @include align-self(center);
