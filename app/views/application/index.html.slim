@@ -3,10 +3,18 @@
     .container
       .row.wraper
         .intro.col-md-5.col-md-offset-1
+<<<<<<< HEAD
           p.bold Afi is an API layer for cities
           p We make it easy for cities to
           p understand their data at scale
           = link_to "Get to know us", '#', class: 'btn white', data: { scroll: '#section-2' }
+=======
+          p Afi is an API layer for cities
+          | We make it easy for cities
+          br
+          | to understand their data at scale
+          = link_to "Get to know us", '#', class: 'btn white'
+>>>>>>> de68c956488db00d3a6bc8e0985a2b57ee4d549b
         .img-wrap.col-md-6
           = image_tag('phone.png')
   section.afian-lab#section-2
@@ -17,9 +25,16 @@
         .intro.col-md-7
           h1.title About Afi Labs
           article
-            p Afi Labs provides a simple and intuitive way to understand and manage their data. We build the API (Application Programming Interface) layer that connects your data with our advanced algorithms and visually stunning visualization platforms to allow your team to turn large amounts of data into actionable information.
+            p
+              | Afi is an API
+              sup *
+              |  layer for cities. By connecting data with advanced algorithms and visually stunning visualizations, our software makes it easy for cities to understand their data at scale.
             br
             p For public agencies, we use fare card data to build apps that let transit planners monitor congestion and quality of service. For e-commerce companies, we solve complicated routing and scheduling problems to allow their drivers to save time and fuel when making deliveries. And for third party logistics companies, we build and design fleet management systems that enable real time fleet monitoring, driver management and proof of delivery.
+            br
+            p
+              small
+                | * Application Programming Interface - a specification for how different software components communicate with one another.
   section.services
     .container
       .row.wraper
@@ -77,7 +92,7 @@
         .col-md-7.img-wrap
           = image_tag_with_at2x('busviz.png')
         .intro.col-md-5
-          h1.title BusViz
+          h1.title Bus Analytics
           article
             p BusViz is a web based application that allows transit regulators and bus operators to easily use ground truth data to monitor and visualize the performance of their fleet.
             br
@@ -87,7 +102,7 @@
     .container
       .row.wraper
         .intro.col-md-5
-          h1.title Taxiviz
+          h1.title Taxi Analytics
           article
             p A project of the MIT Computer Science and Artificial Intelligence Lab, TaxiViz is a Big Data solution for taxi fleets. It uses advanced algorithms and powerful big data infrastructure to distill insights and analysis from real time data. An analytics dashboard captures performance metrics and consumer experience in real time while a driver app increases fleet efficiency and profitability by directing taxis to areas of high unmet demand.
             = link_to "Learn More", root_path, class: 'btn white reverse'
@@ -97,9 +112,7 @@
     .container
       .row.wraper
         p.title
-          | Our client
-          = fa_icon 'heart'
-          | us
+          | Our clients
         .col-md-4
           .branch-box
             = image_tag_with_at2x('branch-3.png')
@@ -113,20 +126,30 @@
     .container
       .row.wraper
         .col-md-6.quote
+<<<<<<< HEAD
           p.title IF YOU LIKE WHAT WE DO AND
           p.title THINK WE COULD WORK TOGETHER, THEN GET IN TOUCH
           = link_to "Get a free quote", new_contact_path, class: 'btn red'
+=======
+          p.title Have a problem we can solve?
+          p.title We are here to help
+          = link_to "Get In Touch", new_contact_path, class: 'btn red'
+>>>>>>> de68c956488db00d3a6bc8e0985a2b57ee4d549b
         .col-md-6.contact-info
-          p.title OR CONTACT US DIRECTLY
+          p.title Or contact us directly
           .row
             .col-md-10.col-md-offset-2
               p.site
-                = fa_icon 'globe'
-                | www.afi.io
+                = fa_icon 'envelope'
+                | sales@afi.io
               p.phone
                 = fa_icon 'phone'
-                | 62413013
+                | 415-802-2286
               p.address
                 = fa_icon 'map-marker'
+<<<<<<< HEAD
                 | 237 Kearny Street, San Francisco, CA 94108
 
+=======
+                | 237 Kearny Street, San Francisco, CA 94108
+>>>>>>> de68c956488db00d3a6bc8e0985a2b57ee4d549b
