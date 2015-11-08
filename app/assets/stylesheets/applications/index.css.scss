@@ -42,15 +42,16 @@
 
     .intro {
       margin-top: 68px;
-      font-size: 36px;
       color: #FFF;
 
       p {
         letter-spacing: 2.5px;
         margin-top: 20px;
         white-space: nowrap;
+        font-size: 32px;
 
         &.bold {
+          font-size: 36px;
           text-transform: uppercase;
           font-weight: bold;
         }

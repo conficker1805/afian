@@ -7,6 +7,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
 
     if @contact.save
+      ContactMailer.notify_admin(@contact).deliver_now
       redirect_to root_path, notice: "Thank you! We will reply as soon as posible"
     else
       render :new

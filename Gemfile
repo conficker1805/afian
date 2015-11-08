@@ -71,6 +71,9 @@ group :development, :test do
 
   # Pretty print your Ruby objects
   gem 'awesome_print'
+
+  # Preview email
+  gem "letter_opener"
 end
 
 group :production do

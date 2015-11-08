@@ -41,4 +41,18 @@ Rails.application.configure do
 
   # Devise configuration
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  # Letter opener configuration
+  config.action_mailer.delivery_method = :letter_opener
+
+  # Mailer configuration
+  ActionMailer::Base.smtp_settings = {
+      :port =>           '587',
+      :address =>        'smtp.mandrillapp.com',
+      :user_name =>      Rails.application.secrets.mandrill_username,
+      :password =>       Rails.application.secrets.mandrill_apikey,
+      :domain =>         'heroku.com',
+      :authentication => :plain
+  }
+  ActionMailer::Base.delivery_method = :smtp
 end
