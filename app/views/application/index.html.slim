@@ -6,10 +6,10 @@
           p DATA VISUALIZATION
           p ARTIFICIAL INTELLIGENCE
           p OPTIMIZATION
-          = link_to "Get to know us", '#', class: 'btn white'
+          = link_to "Get to know us", '#', class: 'btn white', data: { scroll: '#section-2' }
         .img-wrap.col-md-6
           = image_tag('phone.png')
-  section.afian-lab
+  section.afian-lab#section-2
     .container
       .row.wraper
         .col-md-5.img-wrap
@@ -125,3 +125,4 @@
               p.address
                 = fa_icon 'map-marker'
                 | 237 Kearny Street, San Francisco, CA 94108
+
