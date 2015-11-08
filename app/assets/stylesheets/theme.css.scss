@@ -13,6 +13,11 @@ body {
   border: 2px solid #FFF;
   @include border-radius(0);
   color: #FFF;
+
+  &.reverse {
+    border-color: $main-red;
+    color: $main-red;
+  }
 }
 
 .btn.red {

@@ -1,4 +1,11 @@
 .application-index-container {
+  section:not(.banner) .btn.white {
+    height: 40px;
+    margin-top: 33px;
+    padding: 8px 18px;
+    display: inline-block;
+  }
+
   section  {
     border-bottom: 1px solid #e0e0e0;
 
