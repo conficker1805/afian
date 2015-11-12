@@ -1,4 +1,8 @@
 .application-index-container {
+  .btn.red, .btn.white {
+    margin-right: 10px;
+  }
+
   section:not(.banner) .btn.white {
     height: 40px;
     margin-top: 33px;

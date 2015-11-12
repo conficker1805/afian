@@ -13,7 +13,6 @@ body {
   border: 2px solid #FFF;
   @include border-radius(0);
   color: #FFF;
-  margin-right: 10px;
 
   &.reverse {
     border-color: $main-red;
@@ -25,7 +24,6 @@ body {
   @include border-radius(0);
   color: #FFF;
   background-color: $main-red;
-  margin-right: 10px;
 
   &.icon .fa {
     margin-left: 5px;

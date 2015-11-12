@@ -6,26 +6,29 @@
           .title Have a problem we can solve?
           .title We are here to help.
         .contact-info.col-md-6.col-md-offset-3
-          .icon-wrap
-            = fa_icon "phone"
-            p 415-802-2286
-          .icon-wrap
-            = fa_icon "envelope"
-            p sales@afi.io
-          .icon-wrap
-            = fa_icon "map-marker"
-            p
-              | 237 Kearny Street
-              br
-              | San Francisco
-              br
-              | CA 94108
+          .col-md-4.item
+            .icon-wrap
+              = fa_icon "phone"
+              p 415-802-2286
+          .col-md-4.item
+            .icon-wrap
+              = fa_icon "envelope"
+              p sales@afi.io
+          .col-md-4.item
+            .icon-wrap
+              = fa_icon "map-marker"
+              p
+                | 237 Kearny Street
+                br
+                | San Francisco
+                br
+                | CA 94108
   section.contact-form
     .container
       .row.wraper
-        .intro.col-md-6.col-md-offset-3
+        .form-title DROP US A LINE ... OR TWO
+        .intro.col-md-6.col-md-offset-3.col-xs-8.col-xs-offset-2
           = simple_form_for @contact do |f|
-            .form-title DROP US A LINE ... OR TWO
             .row
               .col-md-6
                 = f.input :name, input_html: { placeholder: 'YOUR NAME' }, label: false
