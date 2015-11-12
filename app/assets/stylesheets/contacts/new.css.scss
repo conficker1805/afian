@@ -24,6 +24,11 @@
       @include display-flex();
       @include justify-content(space-around);
 
+      .item {
+        @include display-flex();
+        @include justify-content(center);
+      }
+
       .icon-wrap {
         @include display-flex();
         @include justify-content(center);
@@ -73,6 +78,41 @@
 
     .btn.submit-now {
       height: 40px;
+    }
+  }
+}
+
+.page-wrap .contact-new-container {
+  @media (max-width: 480px) {
+    section.banner {
+      .intro {
+        display: none;
+      }
+
+      .contact-info {
+        margin-top: 40px;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+
+        .item {
+          margin-bottom: 50px;
+        }
+      }
+    }
+
+    section.contact-form {
+      .form-title {
+        font-size: 24px;
+      }
+    }
+  }
+
+  @media (max-width: 400px) {
+    section.contact-form {
+      .intro {
+        width: 100%;
+        margin: 0;
+      }
     }
   }
 }

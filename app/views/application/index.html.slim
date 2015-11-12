@@ -5,13 +5,14 @@
         .intro.col-md-5.col-md-offset-1
           p.bold Afi is an API layer for cities
           p We make it easy for cities to
-          p understand their data at scale
+          p style="margin-top:3px" understand their data at scale
+          br
           = link_to "Get to know us", '#', class: 'btn white', data: { scroll: '#section-2' }
         .img-wrap.col-md-6
           = image_tag('phone.png')
   section.afian-lab#section-2
     .container
-      .row.wraper
+      .row.wraper.reorder-xs
         .col-md-5.img-wrap
           = image_tag_with_at2x('lab.png')
         .intro.col-md-7
@@ -30,25 +31,25 @@
   section.services
     .container
       .row.wraper
-        .col-md-3
+        .service-wrap.col-md-3.col-md-offset-0.col-sm-6.col-sm-offset-3
           .img-wrap
             = image_tag('icons/service-1.svg')
           .title Zero Install, Login and Create
           .description
-            | Because it operates in the cloud, there is no need to install any special software. Simply login, connect your data and get real world insight into the performance of your system. No coding or data cleaning required.
-        .col-md-3
+            | Because it operates in the cloud, there is no need to install any special software. Simply login and connect with your data. No coding or data cleaning required.
+        .service-wrap.col-md-3.col-md-offset-0.col-sm-6.col-sm-offset-3
           .img-wrap
             = image_tag('icons/service-2.svg')
           .title Complete Customization
           .description
             | No annual license fees and and lock-in to proprietary workflows, data formats and user interfaces
-        .col-md-3
+        .service-wrap.col-md-3.col-md-offset-0.col-sm-6.col-sm-offset-3
           .img-wrap
             = image_tag('icons/service-3.svg')
           .title Intuitive and Understandable
           .description
             | We combine advanced algorithms with visually stunning visualizations to efficiently convert large amounts of data into actionable information.
-        .col-md-3
+        .service-wrap.col-md-3.col-md-offset-0.col-sm-6.col-sm-offset-3
           .img-wrap
             = image_tag('icons/service-4.svg')
           .title Powerful and Scalable
@@ -59,23 +60,23 @@
       .row.wraper
         .col-md-7.img-wrap
           = image_tag_with_at2x('deliver.png')
-        .col-md-5
+        .intro.col-md-5
           h1.title Delivery Engine
           article
             p The Afi Delivery Engine is a robust, web based fleet management system that both increases the operational efficiency and improves the end-to-end supply chain visibility.
             br
             p It brings your delivery service up to feature parity with large logistics companies such as UPS and Fedex by allowing your staff to create, track and invoice customer orders as well as provide real time package monitoring, driver management and proof of delivery to your customers.
-            = link_to "Learn More", root_path, class: 'btn white reverse'
+            = link_to "Request Live Demo", new_contact_path, class: 'btn white reverse'
   section.route
     .container
-      .row.wraper
+      .row.wraper.reorder-xs
         .intro.col-md-5
           h1.title Route Optimization
           article
             p Afi's route optmization systems helps logistics and e-commerce companies save time and money by efficiently assigning deliveries to vehicles.
             br
             p Delight your customers and increase the utilization of your fleet - our advanced routing algorithms minimize the distance your drivers need to cover while respecting time windows, vehicle capacity and other constraints.
-            = link_to "Learn More", root_path, class: 'btn white'
+            = link_to "Request Live Demo", new_contact_path, class: 'btn white'
         .img-wrap.col-md-7
           = image_tag_with_at2x('route.png')
   section.bus-viz
@@ -89,15 +90,17 @@
             p BusViz is a web based application that allows transit regulators and bus operators to easily use ground truth data to monitor and visualize the performance of their fleet.
             br
             p Our interactive dashboard uses smart card tap in / tap out data to allow users to infer bus crowdedness, wait times, arrival frequency with high accuracy, allowing you to diagnose problems and improve the commuter experience.
-            = link_to "Learn More", root_path, class: 'btn white reverse'
+            = link_to "Research Paper", "http://afian-ror.s3.amazonaws.com/documents/busViz_TRB.pdf", class: 'btn white reverse'
+            = link_to "Request Live Demo", new_contact_path, class: 'btn white reverse'
   section.taxi-viz
     .container
-      .row.wraper
+      .row.wraper.reorder-xs
         .intro.col-md-5
           h1.title Taxi Analytics
           article
             p A project of the MIT Computer Science and Artificial Intelligence Lab, TaxiViz is a Big Data solution for taxi fleets. It uses advanced algorithms and powerful big data infrastructure to distill insights and analysis from real time data. An analytics dashboard captures performance metrics and consumer experience in real time while a driver app increases fleet efficiency and profitability by directing taxis to areas of high unmet demand.
-            = link_to "Learn More", root_path, class: 'btn white reverse'
+            = link_to "Research Paper", "http://afian-ror.s3.amazonaws.com/documents/unmetDemand_ITSC.pdf", class: 'btn white reverse'
+            = link_to "View Live Demo", "http://taxisg.io/admin", class: 'btn white reverse'
         .col-md-7.img-wrap
           = image_tag_with_at2x('taxiviz.png')
   section.clients
@@ -124,7 +127,7 @@
         .col-md-6.contact-info
           p.title Or contact us directly
           .row
-            .col-md-10.col-md-offset-2
+            .col-md-10.col-md-offset-2.col-xs-8.col-xs-offset-2
               p.site
                 = fa_icon 'envelope'
                 | sales@afi.io
