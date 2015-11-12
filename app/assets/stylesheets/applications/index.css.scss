@@ -1,4 +1,8 @@
 .application-index-container {
+  .btn.red, .btn.white {
+    margin-right: 10px;
+  }
+
   section:not(.banner) .btn.white {
     height: 40px;
     margin-top: 33px;
@@ -35,8 +39,12 @@
     font-size: 16px;
   }
 
+  .intro {
+    margin-bottom: 60px;
+  }
+
   section.banner {
-    height: 470px;
+    min-height: 470px;
     background: image-url('core/banner-bg.jpeg') no-repeat;
     background-size: cover;
 
@@ -83,7 +91,7 @@
 
   section.afian-lab {
     background-color: #fafafa;
-    height: 560px;
+    min-height: 560px;
 
       h1.title:after {
         width: 82px;
@@ -94,16 +102,16 @@
     }
 
     .img-wrap img {
-      max-width: 400px;
+      max-width: 100%;
     }
 
     .intro {
-      margin-top: 68px;
+      margin-top: 50px;
     }
   }
 
   section.services {
-    height: 420px;
+    min-height: 420px;
     text-align: center;
 
     .wraper {
@@ -127,6 +135,8 @@
   }
 
   section.deliver {
+    min-height: 460px;
+
     .wraper {
       margin-top: 75px;
     }
@@ -139,12 +149,16 @@
   }
 
   section.route {
-    height: 472px;
+    min-height: 472px;
     color: #FFF;
     background-color: #ef5555;
 
     img {
-      max-width: 665px;
+      max-width: 100%;
+
+      @media (min-width: 1200px) {
+        max-width: 665px;
+      }
     }
 
     .wraper {
@@ -152,7 +166,7 @@
     }
 
     .intro {
-      margin-top: 52px;
+      margin-top: 40px;
 
       h1.title:after {
         background-color: #FFF;
@@ -161,24 +175,31 @@
   }
 
   section.bus-viz {
-    height: 466px;
+    min-height: 466px;
 
     .wraper {
       margin-top: 46px;
     }
 
     .img-wrap img {
-      max-width: 627px;
+      width: 100%;
+
+      @media (min-width: 1200px) {
+        max-width: 627px;
+      }
     }
 
     .intro {
-      margin-top: 52px;
+      margin-top: 38px;
     }
   }
 
   section.taxi-viz {
-    height: 468px;
+    min-height: 468px;
     background-color: #fafafa;
+    @media (min-width: 1200px) {
+      height: 468px;
+    }
 
     .wraper {
       margin-top: 48px;
@@ -186,7 +207,11 @@
 
     .img-wrap img {
       margin-left: 15px;
-      max-width: 555px;
+      max-width: 100%;
+
+      @media (min-width: 1200px) {
+        max-width: 555px;
+      }
     }
 
     .intro {
@@ -195,7 +220,7 @@
   }
 
   section.clients {
-    height: 500px;
+    min-height: 500px;
 
     .wraper {
       margin-top: 127px;
@@ -220,7 +245,7 @@
       @include display-flex();
 
       img {
-        max-width: 330px;
+        max-width: 90%;
         max-height: 165px;
         margin: 0 auto;
         @include display-flex();
@@ -230,7 +255,7 @@
   }
 
   section.contact {
-    height: 240px;
+    min-height: 240px;
     background-color: #37474f;
 
     .wraper {
@@ -278,9 +303,107 @@
   }
 }
 
-// .page-wrap {
-//   @media screen and (-webkit-min-device-pixel-ratio: 1.2), screen and (-moz-min-device-pixel-ratio: 1.2), screen and (min-device-pixel-ratio: 1.2) {
-//     .application-index-container {
-//     }
-//   }
-// }
+.page-wrap {
+  @media (max-width: 990px) {
+    section.banner  {
+      .intro p {
+        white-space: normal;
+      }
+
+      .img-wrap {
+        display: none;
+      }
+    }
+
+    section .img-wrap {
+      text-align: center;
+    }
+
+    section.services .service-wrap {
+      margin-bottom: 50px;
+    }
+
+    section.clients  {
+      .wraper {
+        margin-top: 40px;
+      }
+
+      .branch-box {
+        margin-bottom: 20px;
+      }
+    }
+
+    section.contact {
+      padding-bottom: 30px;
+
+      .wraper  {
+        margin-top: 20px;
+
+        .quote {
+          padding-bottom: 23px;
+          border-right: none;
+          border-bottom: 1px solid #e0e0e0;
+        }
+
+        .contact-info p:first-child {
+          margin-top: 24px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .application-index-container {
+      .row.reorder-xs {
+        transform: rotate(180deg);
+        direction: rtl;
+      }
+
+      .row.reorder-xs > [class*="col-"] {
+        transform: rotate(-180deg);
+        direction: ltr;
+      }
+
+      section.afian-lab .img-wrap img {
+        width: 90%;
+      }
+
+      section.banner  {
+        min-height: 410px;
+
+        .btn.white {
+          margin: 50px auto 90px;
+        }
+
+        .intro  {
+          text-align: center;
+
+          p.bold {
+            font-size: 24px;
+          }
+
+          p:not(.bold) {
+            font-size: 20px;
+            line-height: 30px;
+          }
+        }
+      }
+
+      section.afian-lab {
+        .wraper {
+          margin-top: 0;
+
+          .img-wrap {
+            padding-bottom: 45px;
+          }
+        }
+      }
+
+      section.taxi-viz {
+        .img-wrap img {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
