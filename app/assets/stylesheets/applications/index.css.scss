@@ -35,6 +35,10 @@
     font-size: 16px;
   }
 
+  .intro {
+    margin-bottom: 60px;
+  }
+
   section.banner {
     height: 470px;
     background: image-url('core/banner-bg.jpeg') no-repeat;
@@ -83,7 +87,7 @@
 
   section.afian-lab {
     background-color: #fafafa;
-    height: 560px;
+    min-height: 560px;
 
       h1.title:after {
         width: 82px;
@@ -94,11 +98,11 @@
     }
 
     .img-wrap img {
-      max-width: 400px;
+      max-width: 100%;
     }
 
     .intro {
-      margin-top: 68px;
+      margin-top: 50px;
     }
   }
 
@@ -127,6 +131,8 @@
   }
 
   section.deliver {
+    min-height: 460px;
+
     .wraper {
       margin-top: 75px;
     }
@@ -139,12 +145,16 @@
   }
 
   section.route {
-    height: 472px;
+    min-height: 472px;
     color: #FFF;
     background-color: #ef5555;
 
     img {
-      max-width: 665px;
+      max-width: 100%;
+
+      @media (min-width: 1200px) {
+        max-width: 665px;
+      }
     }
 
     .wraper {
@@ -152,7 +162,7 @@
     }
 
     .intro {
-      margin-top: 52px;
+      margin-top: 40px;
 
       h1.title:after {
         background-color: #FFF;
@@ -161,24 +171,31 @@
   }
 
   section.bus-viz {
-    height: 466px;
+    min-height: 466px;
 
     .wraper {
       margin-top: 46px;
     }
 
     .img-wrap img {
-      max-width: 627px;
+      width: 100%;
+
+      @media (min-width: 1200px) {
+        max-width: 627px;
+      }
     }
 
     .intro {
-      margin-top: 52px;
+      margin-top: 38px;
     }
   }
 
   section.taxi-viz {
-    height: 468px;
+    min-height: 468px;
     background-color: #fafafa;
+    @media (min-width: 1200px) {
+      height: 468px;
+    }
 
     .wraper {
       margin-top: 48px;
@@ -186,7 +203,11 @@
 
     .img-wrap img {
       margin-left: 15px;
-      max-width: 555px;
+      max-width: 100%;
+
+      @media (min-width: 1200px) {
+        max-width: 555px;
+      }
     }
 
     .intro {
@@ -220,7 +241,7 @@
       @include display-flex();
 
       img {
-        max-width: 330px;
+        max-width: 90%;
         max-height: 165px;
         margin: 0 auto;
         @include display-flex();
@@ -278,9 +299,14 @@
   }
 }
 
-// .page-wrap {
-//   @media screen and (-webkit-min-device-pixel-ratio: 1.2), screen and (-moz-min-device-pixel-ratio: 1.2), screen and (min-device-pixel-ratio: 1.2) {
-//     .application-index-container {
-//     }
-//   }
-// }
+.page-wrap {
+  @media (max-width: 990px) and (min-width: 768px) {
+    .application-index-container {
+      // section:not(.services) {
+      //   .img-wrap {
+      //     display: none;
+      //   }
+      // }
+    }
+  }
+}
