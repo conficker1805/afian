@@ -97,7 +97,7 @@
     background-color: #fafafa;
     min-height: 560px;
 
-      h1.title:after {
+      h2.title:after {
         width: 82px;
       }
 
@@ -172,7 +172,7 @@
     .intro {
       margin-top: 40px;
 
-      h1.title:after {
+      h2.title:after {
         background-color: #FFF;
       }
     }
@@ -375,6 +375,10 @@
       section.banner  {
         min-height: 410px;
 
+        p.bold {
+          white-space: normal;
+        }
+
         .btn.white {
           margin: 50px auto 90px;
         }
@@ -382,7 +386,7 @@
         .intro  {
           text-align: center;
 
-          h1.bold {
+          h2.bold {
             font-size: 24px;
           }
 
