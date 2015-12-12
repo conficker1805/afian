@@ -1,0 +1,12 @@
+.busviz-index-container {
+  section.banner {
+    height: 547px;
+    overflow: hidden;
+    background-size: cover;
+    background: image-url('busviz/busviz-banner-bg.png') no-repeat;
+
+    .img-wrap {
+      margin-top: 53px;
+    }
+  }
+}
