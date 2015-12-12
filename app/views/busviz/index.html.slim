@@ -12,7 +12,45 @@
     .container
       .row.wraper
         .col-md-10.col-md-offset-1
-          p.intro Use real data to instantly identify bus bunching and visualize network capacity, congestion and delays
+          h1.intro Use real data to instantly identify bus bunching and visualize network capacity, congestion and delays
           .img-wrap
             = image_tag('busviz/map.png')
+  section.data
+    .container
+      .row.wrapper
+        .order.col-md-1
+          .number 1
+        .info.col-md-4
+          .title Track bus occupancy, frequency and reliability
+          .desc The bus stop view displays bus loads as colored circles: dark green (empty) to dark red (completely full), together with their arrival headways and standard deviations. This ground truth data allows you to determine crowdedness and bus reliability and punctiality at any bus stop in your network without having to depend on human surveyors.
+        .img-wrap.col-md-7
+            = image_tag('busviz/data-1.png')
+      .row.wrapper
+        .img-wrap.col-md-7
+          = image_tag('busviz/data-2.png')
+        .info.col-md-4
+          .title Understand service at a glance
+          .desc Our interactive time space diagrams allow you to zoom in/out, scroll and pan over any bus route to immediately identify critical segments and congested peak periods.  Bus trajectories  are colored according to the number of passengers on board (dark green for empty, dark red for completely full). Mousing over a bus stop brings up statistics e.g. arrival time, loading etc for each bus arrival.
+        .order.col-md-1
+          .number 2
+      .row.wrapper
+        .order.col-md-1
+          .number 3
+        .info.col-md-4
+          .title Quantity transit accessibility and reach
+          .desc Use the map view to show all bus routes passing through a bus stop to quickly obtain an overall picture of service accessibility in a particular neighborhood. This tool allows transit planners to show that a neighborhood is already adequately served by public transit, or as a starting point for building a case that additional bus services are needed in an area.
+        .img-wrap.col-md-7
+            = image_tag('busviz/data-3.png')
+      .row.wrapper
+        .img-wrap.col-md-7
+          = image_tag('busviz/data-4.png')
+        .info.col-md-4
+          .title Fully Customized Reporting
+          .desc Export your bus data into multiple formats including .csv, .xls and .png to create your own customized reports and data driven presentations or use our API to build your own interactive analysis tools. Either way, Busviz gives you the flexibility to dig deep into your data without having to write SQL statements or a single line of code.
+        .order.col-md-1
+          .number 4
+
+
+
+
 

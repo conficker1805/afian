@@ -4,7 +4,7 @@
   margin-top: 279px;
   text-transform: uppercase;
   line-height: 17px;
-  // TODO: update font
+  // TODO: add font family
 
   .fa {
     margin-left: 10px;
@@ -29,23 +29,64 @@
     background: -webkit-linear-gradient(to bottom, #ebeff2 0%, #ebeff2 78%, #FFF 0px, #FFF 78%, #FFF 100%);
     background: -o-linear-gradient(to bottom, #ebeff2 0%, #ebeff2 78%, #FFF 0px, #FFF 78%, #FFF 100%);
     background: -moz-linear-gradient(to bottom, #ebeff2 0%, #ebeff2 78%, #FFF 0px, #FFF 78%, #FFF 100%);
-  }
 
-  .img-wrap  {
-    margin-top: 5px;
+    .img-wrap  {
+      margin-top: 5px;
 
-    img {
-      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+
+    h1.intro {
+      margin-top: 65px;
+      padding: 0 50px;
+      // TODO: add font family
+      font-size: 30px;
+      color: #4A4A4A;
+      line-height: 45px;
+      text-align: center;
     }
   }
 
-  p.intro {
-    margin-top: 65px;
-    padding: 0 50px;
-    // TODO: add font family
-    font-size: 30px;
-    color: #4A4A4A;
-    line-height: 45px;
-    text-align: center;
+  section.data {
+    .order {
+      font-size: 64px;
+      color: #EF5555;
+    }
+
+    .info {
+      .title {
+        // TODO: add font family
+        font-size: 24px;
+        color: #424242;
+        line-height: 30px;
+      }
+
+      .desc {
+        margin-top: 18px;
+        // TODO: add font family
+        font-size: 18px;
+        color: #424242;
+        line-height: 27px;
+      }
+
+    }
+
+    .img-wrap {
+      margin-top: -63px;
+    }
+
+    .wrapper {
+      margin-top: 140px;
+
+      &:first-of-type {
+        margin-top: 80px;
+      }
+
+      &:nth-of-type(even) .info {
+        text-align: right;
+      }
+    }
   }
 }
