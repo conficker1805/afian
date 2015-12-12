@@ -4,19 +4,17 @@ html
     = render 'layouts/declare'
 
   body
-  	.page-wrap
-  		header
-  			= render 'layouts/header'
+    .page-wrap
+      header
+        = render 'layouts/header'
 
-  		main
-  			= yield
+      main
+        = yield
 
-    	footer
-        = render 'layouts/footer'
+      footer
+        = render 'layouts/busviz/footer'
 
-	= render 'layouts/flash_message'
-
-
+  = render 'layouts/flash_message'
 
 javascript:
   // Google tag manager

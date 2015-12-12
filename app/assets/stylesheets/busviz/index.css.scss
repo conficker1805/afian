@@ -1,0 +1,126 @@
+.btn.white.icon {
+  display: inline-block;
+  padding: 17px 35px 15px;
+  text-transform: uppercase;
+  line-height: 17px;
+  // TODO: add font family
+
+  .fa {
+    margin-left: 10px;
+  }
+}
+
+.busviz-index-container {
+  section.banner {
+    height: 547px;
+    overflow: hidden;
+    background-size: cover;
+    background: image-url('busviz/busviz-banner-bg.png') no-repeat;
+
+    .img-wrap {
+      margin-top: 53px;
+    }
+
+    .btn.white.icon {
+      margin-top: 279px;
+    }
+  }
+
+  section.network {
+    height: 890px;
+    background: linear-gradient(to bottom, #ebeff2 0%, #ebeff2 78%, #FFF 0px, #FFF 78%, #FFF 100%);
+    background: -webkit-linear-gradient(to bottom, #ebeff2 0%, #ebeff2 78%, #FFF 0px, #FFF 78%, #FFF 100%);
+    background: -o-linear-gradient(to bottom, #ebeff2 0%, #ebeff2 78%, #FFF 0px, #FFF 78%, #FFF 100%);
+    background: -moz-linear-gradient(to bottom, #ebeff2 0%, #ebeff2 78%, #FFF 0px, #FFF 78%, #FFF 100%);
+
+    .img-wrap  {
+      margin-top: 5px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    h1.intro {
+      margin-top: 65px;
+      padding: 0 50px;
+      // TODO: add font family
+      font-size: 30px;
+      color: #4A4A4A;
+      line-height: 45px;
+      text-align: center;
+    }
+  }
+
+  section.data {
+    .order {
+      font-size: 64px;
+      color: #EF5555;
+    }
+
+    .info {
+      .title {
+        // TODO: add font family
+        font-size: 24px;
+        color: #424242;
+        line-height: 30px;
+      }
+
+      .desc {
+        margin-top: 18px;
+        // TODO: add font family
+        font-size: 18px;
+        color: #424242;
+        line-height: 27px;
+      }
+
+    }
+
+    .img-wrap {
+      margin-top: -63px;
+    }
+
+    .wrapper {
+      margin-top: 140px;
+
+      &:first-of-type {
+        margin-top: 80px;
+      }
+
+      &:last-of-type {
+        margin-bottom: 75px;
+      }
+
+      &:nth-of-type(even) .info {
+        text-align: right;
+      }
+    }
+  }
+
+  section.contact {
+    text-align: center;
+    height: 300px;
+    background-color: #ef5555;
+    color: #FFF;
+
+    h2 {
+      // TODO: add font family
+      margin-top: 54px;
+      display: inline-block;
+      font-size: 48px;
+      line-height: 56px;
+      width: 100%;
+    }
+
+    .btn.white {
+      margin-top: 23px;
+    }
+
+    p.desc {
+      // TODO: add font family
+      margin-top: 16px;
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+}

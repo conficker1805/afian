@@ -1,10 +1,21 @@
 .footer-container {
-  height: 70px;
+  height: 110px;
   background-color: #eceff1;
+  padding-top: 49px;
+  font-size: 18px;
+  color: #424242;
+  // TODO: add font family
 
   .copyright {
-    padding-top: 29px;
-    color: $main-red;
-    text-align: center;
+    float: left;
+  }
+
+  .go-top {
+    cursor: pointer;
+    float: right;
+
+    .fa {
+      margin-left: 10px;
+    }
   }
 }
