@@ -1,3 +1,16 @@
+.btn.white.icon {
+  display: inline-block;
+  padding: 17px 35px 15px;
+  margin-top: 279px;
+  text-transform: uppercase;
+  line-height: 17px;
+  // TODO: update font
+
+  .fa {
+    margin-left: 10px;
+  }
+}
+
 .busviz-index-container {
   section.banner {
     height: 547px;
@@ -8,5 +21,31 @@
     .img-wrap {
       margin-top: 53px;
     }
+  }
+
+  section.network {
+    height: 890px;
+    background: linear-gradient(to bottom, #ebeff2 0%, #ebeff2 78%, #FFF 0px, #FFF 78%, #FFF 100%);
+    background: -webkit-linear-gradient(to bottom, #ebeff2 0%, #ebeff2 78%, #FFF 0px, #FFF 78%, #FFF 100%);
+    background: -o-linear-gradient(to bottom, #ebeff2 0%, #ebeff2 78%, #FFF 0px, #FFF 78%, #FFF 100%);
+    background: -moz-linear-gradient(to bottom, #ebeff2 0%, #ebeff2 78%, #FFF 0px, #FFF 78%, #FFF 100%);
+  }
+
+  .img-wrap  {
+    margin-top: 5px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  p.intro {
+    margin-top: 65px;
+    padding: 0 50px;
+    // TODO: add font family
+    font-size: 30px;
+    color: #4A4A4A;
+    line-height: 45px;
+    text-align: center;
   }
 }
