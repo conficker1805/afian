@@ -1,0 +1,44 @@
+.busviz-footer-container {
+  height: 110px;
+  background-color: #eceff1;
+  padding-top: 49px;
+  font-size: 18px;
+  color: #424242;
+  font-weight: 600;
+
+  .copyright {
+    float: left;
+  }
+
+  .go-top {
+    margin-top: -7px;
+    margin-right: 20px;
+    cursor: pointer;
+    float: right;
+
+    .fa-stack {
+      margin-top: -3px;
+    }
+
+    .fa-circle {
+      margin-left: 10px;
+      color: #f05457;
+    }
+
+    .fa-arrow-up {
+      margin-left: 10px;
+      color: #FFF;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .copyright {
+    width: 100%;
+    text-align: center
+  }
+
+  .go-top {
+    display: none;
+  }
+}

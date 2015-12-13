@@ -1,0 +1,83 @@
+.busviz-index-container
+  section.banner
+    .container
+      .row.wraper
+        .img-wrap.col-md-7
+          = image_tag_with_at2x('busviz/statistic.png')
+        .intro.col-md-5
+          h1 Monitor and improve the performance of you bus fleet
+          = link_to '#', class: 'btn white icon'
+            | Request a demo
+            = fa_icon 'desktop'
+  section.network
+    .container
+      .row.wraper
+        .col-md-10.col-md-offset-1
+          h2.intro Use real data to instantly identify bus bunching and visualize network capacity, congestion and delays
+          .img-wrap
+            = image_tag_with_at2x('busviz/map.png')
+  section.data
+    .container
+      .row.wrapper
+        .order.col-md-1.col-sm-2.col-xs-2
+          .number 1
+        .info.col-md-4.col-xs-10
+          .title Track bus occupancy, frequency and reliability
+          .desc.hidden-sm.hidden-xs
+            = track_bus_occupancy
+        .img-wrap.col-md-7
+          = image_tag_with_at2x('busviz/data-1.png')
+        .info.col-xs-12.visible-sm.visible-xs
+          .desc
+            = track_bus_occupancy
+      .row.wrapper.reorder-xs
+        .info.col-xs-12.visible-sm.visible-xs
+          .desc
+            = services
+        .img-wrap.col-md-7
+          = image_tag_with_at2x('busviz/data-2.png')
+        .info.col-md-4.col-xs-10
+          .title Understand service at a glance
+          .desc.hidden-sm.hidden-xs
+            = services
+        .order.col-md-1.col-xs-2
+          .number 2
+      .row.wrapper
+        .order.col-md-1.col-sm-2.col-xs-2
+          .number 3
+        .info.col-md-4.col-xs-10
+          .title Quantity transit accessibility and reach
+          .desc.hidden-sm.hidden-xs
+            = quantity
+        .img-wrap.col-md-7
+          = image_tag_with_at2x('busviz/data-3.png')
+        .info.col-xs-12.visible-sm.visible-xs
+          .desc
+            = quantity
+      .row.wrapper.reorder-xs
+        .info.col-xs-12.visible-sm.visible-xs
+          .desc
+            = services
+        .img-wrap.col-md-7
+          = image_tag_with_at2x('busviz/data-4.png')
+        .info.col-md-4.col-xs-10
+          .title Fully Customized Reporting
+          .desc.hidden-sm.hidden-xs
+            = reporting
+        .order.col-md-1.col-xs-2
+          .number 4
+    section.contact
+      .container
+        .row
+          .col-md-12
+            h2 Get Busviz in your city
+            = link_to '#', class: 'btn white icon'
+              | Contact us
+              = fa_icon 'send-o'
+            p.desc For additional information or a free demo of Busviz
+
+
+
+
+
+

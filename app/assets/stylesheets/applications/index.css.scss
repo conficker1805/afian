@@ -58,7 +58,6 @@
         font-weight: bold;
         white-space: nowrap;
         margin-top: 20px;
-        letter-spacing: 2.5px;
       }
 
       p {
@@ -307,7 +306,7 @@
   }
 }
 
-.page-wrap {
+.page-wrap .application-index-container {
   @media (max-width: 990px) {
     section.banner  {
       .intro p {
