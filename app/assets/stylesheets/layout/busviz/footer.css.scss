@@ -1,10 +1,31 @@
-.footer-container {
-  height: 70px;
-  background-color: #ebeff2;
+.busviz-footer-container {
+  height: 110px;
+  background-color: #eceff1;
+  padding-top: 49px;
+  font-size: 18px;
+  color: #424242;
+  font-weight: 600;
 
   .copyright {
-    padding-top: 29px;
-    color: $main-red;
-    text-align: center;
+    float: left;
+  }
+
+  .go-top {
+    cursor: pointer;
+    float: right;
+
+    .fa-stack {
+      margin-top: -3px;
+    }
+
+    .fa-circle {
+      margin-left: 10px;
+      color: #f05457;
+    }
+
+    .fa-arrow-up {
+      margin-left: 10px;
+      color: #FFF;
+    }
   }
 }
