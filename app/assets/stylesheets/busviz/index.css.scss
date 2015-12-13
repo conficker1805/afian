@@ -11,8 +11,6 @@
 }
 
 .busviz-index-container {
-  font-family: 'Raleway', sans-serif;
-
   section.banner {
     height: 547px;
     overflow: hidden;
@@ -66,7 +64,6 @@
   section.data {
     .order {
       font-weight: 600;
-      margin-top: -17px;
       font-size: 64px;
       color: #EF5555;
     }
@@ -105,7 +102,7 @@
 
       &:nth-of-type(even)  {
         .order {
-          margin-top: -28px;
+          margin-top: -17px;
         }
 
         .info {
