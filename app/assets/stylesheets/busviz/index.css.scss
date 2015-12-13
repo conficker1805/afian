@@ -103,8 +103,14 @@
         margin-bottom: 75px;
       }
 
-      &:nth-of-type(even) .info {
-        text-align: right;
+      &:nth-of-type(even)  {
+        .order {
+          margin-top: -28px;
+        }
+
+        .info {
+          text-align: right;
+        }
       }
     }
   }
