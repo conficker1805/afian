@@ -22,7 +22,6 @@
       margin-top: 104px;
       line-height: 48px;
       font-size: 36px;
-      font-family: "Raleway";
       font-weight: 600;
     }
 
@@ -225,6 +224,14 @@
   }
 
   @media (max-width: 767px) {
+    section.network {
+      h2.intro {
+        margin-top: 40px;
+        font-size: 23px;
+        line-height: 37px;
+      }
+    }
+
     section.data {
       .wrapper {
         .info {
@@ -241,6 +248,10 @@
   }
 
   @media (max-width: 600px) {
+    section.network {
+      height: 630px;
+    }
+
     section.contact {
       h2 {
         font-size: 24px;
