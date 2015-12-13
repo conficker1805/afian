@@ -28,6 +28,10 @@
 
     .img-wrap {
       margin-top: 53px;
+
+      img {
+        width: 100%;
+      }
     }
 
     .btn {
@@ -87,6 +91,10 @@
 
     .img-wrap {
       margin-top: -63px;
+
+      img {
+        width: 100%;
+      }
     }
 
     .wrapper {
@@ -137,3 +145,116 @@
     }
   }
 }
+
+.page-wrap .busviz-index-container {
+  @media (max-width: 1200px) {
+    section.network {
+      height: 760px;
+    }
+
+    section.data {
+      .img-wrap {
+        margin-top: 20px;
+      }
+
+      .wrapper {
+        margin-top: 90px;
+
+        &:first-of-type {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 990px) {
+    section.data {
+      .wrapper {
+        margin-top: 30px;
+      }
+    }
+
+    section.banner  {
+      height: 470px;
+
+      .img-wrap {
+        display: none;
+      }
+    }
+
+    section.data {
+      .row.reorder-xs {
+        transform: rotate(180deg);
+        direction: rtl;
+      }
+
+      .row.reorder-xs > [class*="col-"] {
+        transform: rotate(-180deg);
+        direction: ltr;
+      }
+
+      .img-wrap {
+        margin-top: 80px;
+      }
+
+      .wrapper {
+        .info {
+          margin-top: 13px;
+        }
+
+        &:nth-of-type(even) {
+          .img-wrap {
+            display: inline-block;
+          }
+
+          .order {
+            margin-top: 0px;
+          }
+
+          .info {
+            margin-top: 20px;
+            text-align: left;
+
+            .desc {
+              margin-top: -60px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    section.data {
+      .wrapper {
+        .info {
+          margin-top: 0;
+        }
+
+        &:nth-of-type(even) {
+          .info {
+            margin-top: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    section.contact {
+      h2 {
+        font-size: 24px;
+      }
+
+      p.desc {
+        font-size: 20px;
+      }
+
+      .btn {
+        margin-top: 10px;
+        width: 235px;
+      }
+    }
+  }
+}
+

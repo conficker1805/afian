@@ -11,6 +11,8 @@
   }
 
   .go-top {
+    margin-top: -7px;
+    margin-right: 20px;
     cursor: pointer;
     float: right;
 
@@ -27,5 +29,16 @@
       margin-left: 10px;
       color: #FFF;
     }
+  }
+}
+
+@media (max-width: 600px) {
+  .copyright {
+    width: 100%;
+    text-align: center
+  }
+
+  .go-top {
+    display: none;
   }
 }

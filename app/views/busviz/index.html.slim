@@ -19,43 +19,62 @@
   section.data
     .container
       .row.wrapper
-        .order.col-md-1
+        .order.col-md-1.col-sm-2.col-xs-2
           .number 1
-        .info.col-md-4
+        .info.col-md-4.col-xs-10
           .title Track bus occupancy, frequency and reliability
-          .desc The bus stop view displays bus loads as colored circles: dark green (empty) to dark red (completely full), together with their arrival headways and standard deviations. This ground truth data allows you to determine crowdedness and bus reliability and punctiality at any bus stop in your network without having to depend on human surveyors.
+          .desc.hidden-sm.hidden-xs
+            = track_bus_occupancy
         .img-wrap.col-md-7
-            = image_tag_with_at2x('busviz/data-1.png')
-      .row.wrapper
+          = image_tag_with_at2x('busviz/data-1.png')
+        .info.col-xs-12.visible-sm.visible-xs
+          .desc
+            = track_bus_occupancy
+      .row.wrapper.reorder-xs
+        .info.col-xs-12.visible-sm.visible-xs
+          .desc
+            = services
         .img-wrap.col-md-7
           = image_tag_with_at2x('busviz/data-2.png')
-        .info.col-md-4
+        .info.col-md-4.col-xs-10
           .title Understand service at a glance
-          .desc Our interactive time space diagrams allow you to zoom in/out, scroll and pan over any bus route to immediately identify critical segments and congested peak periods.  Bus trajectories  are colored according to the number of passengers on board (dark green for empty, dark red for completely full). Mousing over a bus stop brings up statistics e.g. arrival time, loading etc for each bus arrival.
-        .order.col-md-1
+          .desc.hidden-sm.hidden-xs
+            = services
+        .order.col-md-1.col-xs-2
           .number 2
       .row.wrapper
-        .order.col-md-1
+        .order.col-md-1.col-sm-2.col-xs-2
           .number 3
-        .info.col-md-4
+        .info.col-md-4.col-xs-10
           .title Quantity transit accessibility and reach
-          .desc Use the map view to show all bus routes passing through a bus stop to quickly obtain an overall picture of service accessibility in a particular neighborhood. This tool allows transit planners to show that a neighborhood is already adequately served by public transit, or as a starting point for building a case that additional bus services are needed in an area.
+          .desc.hidden-sm.hidden-xs
+            = quantity
         .img-wrap.col-md-7
-            = image_tag_with_at2x('busviz/data-3.png')
-      .row.wrapper
+          = image_tag_with_at2x('busviz/data-3.png')
+        .info.col-xs-12.visible-sm.visible-xs
+          .desc
+            = quantity
+      .row.wrapper.reorder-xs
+        .info.col-xs-12.visible-sm.visible-xs
+          .desc
+            = services
         .img-wrap.col-md-7
           = image_tag_with_at2x('busviz/data-4.png')
-        .info.col-md-4
+        .info.col-md-4.col-xs-10
           .title Fully Customized Reporting
-          .desc Export your bus data into multiple formats including .csv, .xls and .png to create your own customized reports and data driven presentations or use our API to build your own interactive analysis tools. Either way, Busviz gives you the flexibility to dig deep into your data without having to write SQL statements or a single line of code.
-        .order.col-md-1
+          .desc.hidden-sm.hidden-xs
+            = reporting
+        .order.col-md-1.col-xs-2
           .number 4
     section.contact
-      h2 Get Busviz in your city
-      = link_to '#', class: 'btn white icon'
-        | Contact us
-        = fa_icon 'send-o'
-      p.desc For additional information or a free demo of Busviz
+      .container
+        .row
+          .col-md-12
+            h2 Get Busviz in your city
+            = link_to '#', class: 'btn white icon'
+              | Contact us
+              = fa_icon 'send-o'
+            p.desc For additional information or a free demo of Busviz
 
 
 
