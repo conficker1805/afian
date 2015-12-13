@@ -1,7 +1,9 @@
-.footer-container
+.busviz-footer-container
   .container
     .row
       .copyright © Busviz.sg 2015. All rights reserved
       .go-top data-scroll=".header-container"
         | Back to top
-        = fa_icon "arrow-up"
+        .fa-stack
+          = fa_stacked_icon "arrow-up", base: "circle"
+
