@@ -14,15 +14,14 @@
   section.banner {
     height: 547px;
     overflow: hidden;
-    background-size: cover;
     background: image-url('busviz/busviz-banner-bg.png') no-repeat;
+    background-size: cover;
 
     h1 {
       color: #FFF;
       margin-top: 104px;
       line-height: 48px;
       font-size: 36px;
-      font-family: "Raleway";
       font-weight: 600;
     }
 
@@ -54,6 +53,36 @@
       }
     }
 
+    .video-wrap  {
+      margin-top: 50px;
+      position: relative;
+
+      .address-bar, .status-bar {
+        width: 100%;
+      }
+
+      .status-bar {
+        margin-top: -3px;
+      }
+
+      video {
+        border-left: 1px solid #CCC;
+        border-right: 1px solid #CCC;
+        width: 100%;
+      }
+
+      .url {
+        position: absolute;
+        left: 400px;
+        top: 15px;
+        color: #949494;
+
+        &:hover {
+          color: #337AB7;
+        }
+      }
+    }
+
     h2.intro {
       font-weight: 600;
       margin-top: 65px;
@@ -61,6 +90,14 @@
       font-size: 30px;
       color: #4A4A4A;
       line-height: 45px;
+      text-align: center;
+    }
+
+    .desc {
+      margin-top: 18px;
+      font-size: 18px;
+      color: #424242;
+      line-height: 27px;
       text-align: center;
     }
   }
@@ -122,7 +159,7 @@
 
   section.contact {
     text-align: center;
-    height: 300px;
+    height: 250px;
     background-color: #ef5555;
     color: #FFF;
 
@@ -150,6 +187,19 @@
   @media (max-width: 1200px) {
     section.network {
       height: 760px;
+
+      .video-wrap  {
+        margin-top: 10px;
+
+        .url {
+          left: 330px;
+          top: 11px;
+        }
+
+        .status-bar {
+          margin-top: -8px;
+        }
+      }
     }
 
     section.data {
@@ -225,6 +275,14 @@
   }
 
   @media (max-width: 767px) {
+    section.network {
+      h2.intro {
+        margin-top: 40px;
+        font-size: 23px;
+        line-height: 37px;
+      }
+    }
+
     section.data {
       .wrapper {
         .info {
@@ -241,6 +299,10 @@
   }
 
   @media (max-width: 600px) {
+    section.network {
+      height: 630px;
+    }
+
     section.contact {
       h2 {
         font-size: 24px;

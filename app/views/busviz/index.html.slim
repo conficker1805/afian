@@ -6,15 +6,22 @@
           = image_tag_with_at2x('busviz/statistic.png')
         .intro.col-md-5
           h1 Monitor and improve the performance of you bus fleet
-          = link_to '#', class: 'btn white icon'
+          = link_to new_contact_path, class: 'btn white icon'
             | Request a demo
             = fa_icon 'desktop'
   section.network
     .container
       .row.wraper
         .col-md-10.col-md-offset-1
-          h2.intro Use real data to instantly identify bus bunching and visualize network capacity, congestion and delays
-          .img-wrap
+          h2.intro Busviz is a Big Data platform for bus fleets
+          .desc
+            p Use real data to instantly identify bus bunching and visualize network capacity, congestion and delays
+          .video-wrap.visible-md.visible-lg
+            = link_to "http://afi.io/busviz", busviz_index_path, class: "url"
+            = image_tag('busviz/browser-address-bar.png', class: 'address-bar')
+            = video_tag('video.mp4', autoplay: true, loop: true)
+            = image_tag('busviz/browser-status-bar.png', class: 'status-bar')
+          .img-wrap.hidden-md.hidden-lg
             = image_tag_with_at2x('busviz/map.png')
   section.data
     .container
@@ -57,7 +64,7 @@
       .row.wrapper.reorder-xs
         .info.col-xs-12.visible-sm.visible-xs
           .desc
-            = services
+            = reporting
         .img-wrap.col-md-7
           = image_tag_with_at2x('busviz/data-4.png')
         .info.col-md-4.col-xs-10
@@ -71,13 +78,6 @@
         .row
           .col-md-12
             h2 Get Busviz in your city
-            = link_to '#', class: 'btn white icon'
+            = link_to new_contact_path, class: 'btn white icon'
               | Contact us
               = fa_icon 'send-o'
-            p.desc For additional information or a free demo of Busviz
-
-
-
-
-
-
