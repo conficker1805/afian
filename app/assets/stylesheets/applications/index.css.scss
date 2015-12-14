@@ -72,7 +72,7 @@
       .btn.white {
         height: 60px;
         max-width: 368px;
-        margin-top: 65px;
+        margin-top: 20px;
         font-size: 24px;
         position: relative;
 
@@ -356,60 +356,23 @@
   }
 
   @media (max-width: 767px) {
-    .application-index-container {
-      .row.reorder-xs {
-        transform: rotate(180deg);
-        direction: rtl;
+    .row.reorder-xs {
+      transform: rotate(180deg);
+      direction: rtl;
+    }
+
+    .row.reorder-xs > [class*="col-"] {
+      transform: rotate(-180deg);
+      direction: ltr;
+    }
+
+    section .reorder-xs  {
+      .img-wrap {
+        margin-top: -35px;
       }
 
-      .row.reorder-xs > [class*="col-"] {
-        transform: rotate(-180deg);
-        direction: ltr;
-      }
-
-      section.afian-lab .img-wrap img {
-        width: 90%;
-      }
-
-      section.banner  {
-        min-height: 410px;
-
-        p.bold {
-          white-space: normal;
-        }
-
-        .btn.white {
-          margin: 50px auto 90px;
-        }
-
-        .intro  {
-          text-align: center;
-
-          h2.bold {
-            font-size: 24px;
-          }
-
-          p:not(.bold) {
-            font-size: 20px;
-            line-height: 30px;
-          }
-        }
-      }
-
-      section.afian-lab {
-        .wraper {
-          margin-top: 0;
-
-          .img-wrap {
-            padding-bottom: 45px;
-          }
-        }
-      }
-
-      section.taxi-viz {
-        .img-wrap img {
-          margin-left: 0;
-        }
+      .intro {
+        margin-top: 60px;
       }
     }
   }
