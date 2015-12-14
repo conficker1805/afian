@@ -53,6 +53,36 @@
       }
     }
 
+    .video-wrap  {
+      margin-top: 50px;
+      position: relative;
+
+      .address-bar, .status-bar {
+        width: 100%;
+      }
+
+      .status-bar {
+        margin-top: -3px;
+      }
+
+      video {
+        border-left: 1px solid #CCC;
+        border-right: 1px solid #CCC;
+        width: 100%;
+      }
+
+      .url {
+        position: absolute;
+        left: 400px;
+        top: 15px;
+        color: #949494;
+
+        &:hover {
+          color: #337AB7;
+        }
+      }
+    }
+
     h2.intro {
       font-weight: 600;
       margin-top: 65px;
@@ -157,6 +187,19 @@
   @media (max-width: 1200px) {
     section.network {
       height: 760px;
+
+      .video-wrap  {
+        margin-top: 10px;
+
+        .url {
+          left: 330px;
+          top: 11px;
+        }
+
+        .status-bar {
+          margin-top: -8px;
+        }
+      }
     }
 
     section.data {
