@@ -47,6 +47,42 @@
 
     .img-wrap  {
       margin-top: 5px;
+      position: relative;
+
+      .img-overlay {
+        cursor: pointer;
+        padding: 0;
+        margin-top: 1.5vw;
+        width: 92.8%;
+        height: 90%;
+        display: block;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.4);
+        left: 50%;
+        top: 0;
+        @include border-radius(3px);
+        @include transform-translate(-50%, 0);
+
+        .triangle {
+          width: 0;
+          height: 0;
+          border-top: 50px solid transparent;
+          border-left: 100px solid #FFF;
+          border-bottom: 50px solid transparent;
+          position: relative;
+          top: 40%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        .demo {
+          position: relative;
+          top: 37%;
+          text-align: center;
+          font-size: 24px;
+          color: #FFF;
+        }
+      }
 
       img {
         width: 100%;
@@ -186,6 +222,7 @@
 .page-wrap .busviz-index-container {
   @media (max-width: 1200px) {
     section.network {
+
       height: 760px;
 
       .video-wrap  {
@@ -276,6 +313,11 @@
 
   @media (max-width: 767px) {
     section.network {
+      background: linear-gradient(to bottom, #ebeff2 0%, #ebeff2 73vw, #FFF 0px, #FFF 78%, #FFF 100%);
+      background: -webkit-linear-gradient(to bottom, #ebeff2 0%, #ebeff2 73vw, #FFF 0px, #FFF 78%, #FFF 100%);
+      background: -o-linear-gradient(to bottom, #ebeff2 0%, #ebeff2 73vw, #FFF 0px, #FFF 78%, #FFF 100%);
+      background: -moz-linear-gradient(to bottom, #ebeff2 0%, #ebeff2 73vw, #FFF 0px, #FFF 78%, #FFF 100%);
+
       h2.intro {
         margin-top: 40px;
         font-size: 23px;
@@ -300,7 +342,24 @@
 
   @media (max-width: 600px) {
     section.network {
+      background: linear-gradient(to bottom, #ebeff2 0%, #ebeff2 65%, #FFF 0px, #FFF 78%, #FFF 100%);
+      background: -webkit-linear-gradient(to bottom, #ebeff2 0%, #ebeff2 65%, #FFF 0px, #FFF 78%, #FFF 100%);
+      background: -o-linear-gradient(to bottom, #ebeff2 0%, #ebeff2 65%, #FFF 0px, #FFF 78%, #FFF 100%);
+      background: -moz-linear-gradient(to bottom, #ebeff2 0%, #ebeff2 65%, #FFF 0px, #FFF 78%, #FFF 100%);
       height: 630px;
+
+      .img-overlay  {
+        .demo {
+          font-size: 20px;
+        }
+
+        .triangle   {
+          border-top: 6vw solid transparent;
+          border-left: 10vw solid #FFF;
+          border-bottom: 6vw solid transparent;
+        }
+      }
+
     }
 
     section.contact {
@@ -319,4 +378,3 @@
     }
   }
 }
-

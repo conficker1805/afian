@@ -27,6 +27,10 @@
             = video_tag('intro.mp4', autoplay: true, loop: true)
             = image_tag('busviz/browser-status-bar.png', class: 'status-bar')
           .img-wrap.hidden-md.hidden-lg
+            = link_to "https://www.youtube.com/embed/6CESThPMTxk?autoplay=true", target: "_blank"
+              .img-overlay
+                .triangle
+                .demo Watch a 30 sec demo
             = image_tag_with_at2x('busviz/map.png')
   section.data
     .container
