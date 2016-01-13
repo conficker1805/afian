@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   resources :contacts, only: [:new, :create]
   resources :busviz, only: [:index]
+  resources :delivery, only: [:index]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
