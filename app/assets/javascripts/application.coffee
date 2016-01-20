@@ -3,6 +3,7 @@
 
 #= require bootstrap-sprockets
 #= require bootstrap-dialog
+#= require owl.carousel.js
 
 #= require functions
 #= require onload

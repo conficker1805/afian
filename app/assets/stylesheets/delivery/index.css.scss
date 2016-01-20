@@ -84,9 +84,6 @@
   section.delivery {
     min-height: 580px;
     border-top: 2px solid #ee534f;
-    background: image-url('delivery/waybill.png') no-repeat left bottom;
-    background-position-y: 50px;
-    text-align: right;
 
     .title-box {
       position: relative;
@@ -101,6 +98,17 @@
       text-transform: uppercase;
     }
 
+    .slider.imgs {
+      .owl-dots {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+        padding-right: 15px;
+      }
+    }
+
     .title {
       margin-top: 93px;
       font-size: 30px;
@@ -112,44 +120,30 @@
       margin-top: 17px;
       line-height: 21px;
     }
+  }
 
-    .spliter  {
-      position: relative;
+  section.brands {
+    min-height: 300px;
+    background-color: #eceff1;
+    text-align: center;
+
+    .img-wrap {
+      margin-top: 62px;
+      padding-bottom: 29px;
+      border-bottom: 1px solid #cfd8dc;
+      text-align: center;
     }
 
-    .line {
-      position: absolute;
-      top: -50px;
-      right: 50%;
-      width: 2px;
-      height: 579px;
-      background: red;
-      z-index: 1;
+    .motto {
+      color: #37474f;
+      font-size: 18px;
+      line-height: 27px;
+      margin-top: 22px;
     }
 
-    .circle-wrap {
-      margin-top: 80px;
-      background: #FFF;
-      width: 65px;
-      height: 85px;
-      padding: 10px 0 10px;
-      position: absolute;
-      z-index: 9;
-
-      .circle {
-        height: 100%;
-        border: 2px solid $main-red;
-        @include border-radius(50%);
-
-        &:after {
-          content: "";
-          width: 100%;
-          height: 100%;
-          position: relative;
-          display: block;
-          background: image-url('delivery/site.png') no-repeat center;
-        }
-      }
+    p.author {
+      margin-top: 7px;
+      color: #546e7a;
     }
   }
 
