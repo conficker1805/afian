@@ -5,7 +5,7 @@
         .intro
           h1 DELIVERY ENGINE
           p Real time package monitoring and driver management
-        .img-wrap
+        .img-wrap class="animateme" data-when="view" data-from="0.2" data-to="0.5" data-translatex="-80" data-translatey="160"
           = image_tag_with_at2x('delivery/macbook.png')
   section.services
     .container
@@ -48,15 +48,41 @@
           | DELIVERY ENGINE KEY FEATURES
       .row.wraper
         .col-md-8
-        .col-md-3
-          .title
-            | Web Based Management
-          .description
-            | Web based fleet management system that both increases the operational efficiency and improves the end-to-end supply chain visibility.
-        .col-md-1.spliter
-          .line
-          .circle-wrap
-            .circle
+          .slider.imgs.owl-carousel.owl-theme
+            .img-wrap
+              = image_tag('delivery/waybill.png')
+            .img-wrap
+              = image_tag('delivery/waybill.png')
+            .img-wrap
+              = image_tag('delivery/waybill.png')
+        .col-md-4
+          .slider.text.owl-carousel.owl-theme
+            .wrapper
+              .title
+                | Web Based Management
+              .description
+                | Web based fleet management system that both increases the operational efficiency and improves the end-to-end supply chain visibility.
+            .wrapper
+              .title
+                | Web Based Management
+              .description
+                | Web based fleet management system that both increases the operational efficiency and improves the end-to-end supply chain visibility.
+            .wrapper
+              .title
+                | Web Based Management
+              .description
+                | Web based fleet management system that both increases the operational efficiency and improves the end-to-end supply chain visibility.
+  section.brands
+    .container
+      .row
+        .img-wrap.col-md-6.col-md-offset-3
+          = image_tag('delivery/hoch.png')
+      .row
+        .col-md-6.col-md-offset-3
+          .motto
+            | “Delivery Engine makes organizing my waybill and managing my drivers a lot easier. I highly recommend it.”
+          p.author
+            | - Ivan Lim, Managing Director
   section.contact
     .container
       .row
@@ -66,9 +92,19 @@
             | Contact us
             = fa_icon 'send-o'
 
+javascript:
+  $(document).ready(function(){
+    $('.slider.imgs, .slider.text').owlCarousel({
+      items: 1,
+      loop: true,
+      margin: 10,
+      responsiveClass: true,
+      autoplay: true,
+      rewindSpeed: 500,
+    })
 
-
-
-
-
-
+    $('.slider.text').on('changed.owl.carousel', function(event) {
+      var index = $('.slider.text .owl-dot.active').index()
+      $('.slider.imgs .owl-dot:nth-child(' + (index + 1) + ')').trigger('click')
+    })
+  });
