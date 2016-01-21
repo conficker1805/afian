@@ -50,11 +50,11 @@
         .col-md-8
           .slider.imgs.owl-carousel.owl-theme
             .img-wrap
-              = image_tag('delivery/waybill.png')
+              = image_tag_with_at2x('delivery/slider1.jpg')
             .img-wrap
-              = image_tag('delivery/waybill.png')
+              = image_tag_with_at2x('delivery/slider2.jpg')
             .img-wrap
-              = image_tag('delivery/waybill.png')
+              = image_tag_with_at2x('delivery/slider3.jpg')
         .col-md-4
           .slider.text.owl-carousel.owl-theme
             .wrapper
@@ -76,7 +76,7 @@
     .container
       .row
         .img-wrap.col-md-6.col-md-offset-3
-          = image_tag('delivery/hoch.png')
+          = image_tag_with_at2x('delivery/hoch.png')
       .row
         .col-md-6.col-md-offset-3
           .motto
@@ -99,7 +99,6 @@ javascript:
       loop: true,
       margin: 10,
       responsiveClass: true,
-      autoplay: true,
       rewindSpeed: 500,
     })
 

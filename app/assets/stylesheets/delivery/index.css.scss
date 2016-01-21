@@ -109,6 +109,12 @@
       }
     }
 
+    .slider.text {
+      .owl-dots .owl-dot.active span, .owl-dots .owl-dot:hover span {
+        background-color: $main-red;
+      }
+    }
+
     .title {
       margin-top: 93px;
       font-size: 30px;
@@ -132,6 +138,10 @@
       padding-bottom: 29px;
       border-bottom: 1px solid #cfd8dc;
       text-align: center;
+
+      img {
+        width: 100%;
+      }
     }
 
     .motto {
