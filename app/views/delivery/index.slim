@@ -55,8 +55,29 @@
               = image_tag_with_at2x('delivery/slider2.jpg')
             .img-wrap
               = image_tag_with_at2x('delivery/slider3.jpg')
+            .img-wrap
+              = image_tag_with_at2x('delivery/slider4.jpg')
+            .img-wrap
+              = image_tag_with_at2x('delivery/slider5.jpg')
+            .img-wrap
+              = image_tag_with_at2x('delivery/slider6.jpg')
         .col-md-4
           .slider.text.owl-carousel.owl-theme
+            .wrapper
+              .title
+                | Web Based Management
+              .description
+                | Web based fleet management system that both increases the operational efficiency and improves the end-to-end supply chain visibility.
+            .wrapper
+              .title
+                | Web Based Management
+              .description
+                | Web based fleet management system that both increases the operational efficiency and improves the end-to-end supply chain visibility.
+            .wrapper
+              .title
+                | Web Based Management
+              .description
+                | Web based fleet management system that both increases the operational efficiency and improves the end-to-end supply chain visibility.
             .wrapper
               .title
                 | Web Based Management
@@ -94,13 +115,23 @@
 
 javascript:
   $(document).ready(function(){
-    $('.slider.imgs, .slider.text').owlCarousel({
+    $('.slider.text').owlCarousel({
       items: 1,
       loop: true,
       margin: 10,
       responsiveClass: true,
       rewindSpeed: 500,
     })
+    $('.slider.imgs').owlCarousel({
+      items: 1,
+      loop: true,
+      margin: 10,
+      responsiveClass: true,
+      touchDrag  : false,
+      mouseDrag  : false,
+      rewindSpeed: 500
+    })
+
 
     $('.slider.text').on('changed.owl.carousel', function(event) {
       var index = $('.slider.text .owl-dot.active').index()
